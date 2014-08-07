@@ -1,6 +1,0 @@
-PrecMath Validity Checker Extension 1.0 - Sep 4, 2013 12:05
-
-- first version
-- use by
-var add = PMath.makeProcessor(C.add);
-add(34, 54);
