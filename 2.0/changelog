@@ -1,0 +1,6 @@
+Math Validity Checker 2.0 - Jul 15, 2014 14:52
+
+- renamed from prec-math-check
+- renames include
+    makeProcessor -> proc
+    addFunc -> fn
