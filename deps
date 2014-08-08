@@ -1,0 +1,6 @@
+# This file is a dependency definition
+master:README.md .
+master:math-check.js lib
+tools master:tools.js lib
+prec-math master:prec-math.js lib
+cmpl-math master:cmpl-math.js lib
