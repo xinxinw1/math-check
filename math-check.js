@@ -1,11 +1,13 @@
-/***** Math Validity Checker 2.1 *****/
+/***** Math Validity Checker 2.2.0 *****/
 
-/* require tools 4.0 */
-/* optional prec-math 4.0 - 4.1 */
-/* optional cmpl-math 1.0 */
+/* require tools 4.4.1 */
+/* optional prec-math 4.3.0 */
+/* optional cmpl-math 1.2.1 */
 
-(function (win, udf){
+(function (udf){
   ////// Import //////
+  
+  var nodep = $.nodep;
   
   var apl = $.apl;
   var att = $.att;
@@ -270,14 +272,17 @@
   
   ////// Object exposure //////
   
-  win.PMath = att({
+  var Checker = {
     proc: proc,
     fn: fn,
     spec: spec
-  }, PMath);
+  };
+  
+  if (nodep)module.exports = Checker;
+  else window.Checker = Checker;
   
   ////// Testing //////
   
   
   
-})(window);
+})();
