@@ -49,7 +49,7 @@
     var tps = types(f);
     if (tps == "spec")return sref(f)();
     var p = prms(f);
-    return function f2(){
+    function f2(){
       func = f; prm = p;
       var a = arguments;
       var arr = [];
@@ -59,7 +59,9 @@
       var ret = apl(f, arr);
       att(f, f2);
       return ret;
-    };
+    }
+    att({orig: f}, f2);
+    return f2;
   }
   
   function process(arg, type){
@@ -275,7 +277,8 @@
   var Checker = {
     proc: proc,
     fn: fn,
-    spec: spec
+    spec: spec,
+    fref: fref
   };
   
   if (nodep)module.exports = Checker;
