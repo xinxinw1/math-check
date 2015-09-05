@@ -1,4 +1,4 @@
-/***** Math Validity Checker 2.2.1 *****/
+/***** Math Validity Checker 2.2.2 *****/
 
 /* require tools 4.4.1 */
 /* optional prec-math 4.3.0 */
