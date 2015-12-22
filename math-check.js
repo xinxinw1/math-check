@@ -1,4 +1,4 @@
-/***** Math Validity Checker 3.0.0 *****/
+/***** Math Validity Checker 3.0.1 *****/
 
 /* require tools 4.10.3 */
 /* optional prec-math 5.0.0 */
@@ -142,6 +142,13 @@
     fn(C.flr, ["cmpl", "nprec"]);
     fn(C.trn, ["cmpl", "nprec"]);
     
+    fn(C.abs, ["cmpl", "nprec"]);
+    fn(C.arg, ["cmpl", "nprec"]);
+    fn(C.sgn, ["cmpl", "nprec"]);
+    fn(C.re, ["cmpl"]);
+    fn(C.im, ["cmpl"]);
+    fn(C.conj, ["cmpl"]);
+    
     fn(C.exp, ["cmpl", "nprec"]);
     fn(C.ln, ["cmpl", "nprec"]);
     fn(C.pow, ["cmpl", "cmpl", "nprec"]);
@@ -156,12 +163,7 @@
     fn(C.sinh, ["cmpl", "nprec"]);
     fn(C.cosh, ["cmpl", "nprec"]);
     
-    fn(C.abs, ["cmpl", "nprec"]);
-    fn(C.arg, ["cmpl", "nprec"]);
-    fn(C.sgn, ["cmpl", "nprec"]);
-    fn(C.re, ["cmpl"]);
-    fn(C.im, ["cmpl"]);
-    fn(C.conj, ["cmpl"]);
+    fn(C.atan2, ["real", "real", "nprec"]);
     
     fn(C.pi, ["nprec"]);
     fn(C.e, ["nprec"]);
