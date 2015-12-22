@@ -10,10 +10,9 @@
   var nodep = $.nodep;
   
   var apl = $.apl;
-  var att = $.att;
   
-  var oref = $.oref;
-  var oset = $.oset;
+  var pos = $.pos;
+  var tfna = $.tfna;
   
   var prms = $.prms;
   
@@ -110,14 +109,18 @@
   
   ////// Functions //////
   
-  var funcs = {};
+  var funcs = [];
+  var funcprms = [];
   
   function fref(ref){
-    return oref(funcs, ref);
+    var p = pos(tfna(ref), funcs);
+    if (p == -1)return udf;
+    return funcprms[p];
   }
   
   function fn(ref, params){
-    return oset(funcs, ref, params);
+    funcs.push(ref);
+    funcprms.push(params);
   }
   
   function types(ref){
@@ -178,7 +181,6 @@
     fn(R.oddp, ["real"]);
     fn(R.div5p, ["real"]);
     
-    fn(R.pad, ["real", "real"]);
     fn(R.byzero, ["real", "nprec"]);
     fn(R.diffbyzero, ["real", "real", "nprec"]);
     
