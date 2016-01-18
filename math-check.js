@@ -1,4 +1,4 @@
-/***** Math Validity Checker 3.0.1 *****/
+/***** Math Validity Checker 3.0.2 *****/
 
 /* require tools 4.10.3 */
 /* optional prec-math 5.0.0 */
@@ -14,6 +14,7 @@
   var pos = $.pos;
   var tfna = $.tfna;
   
+  var worig = $.worig;
   var prms = $.prms;
   
   var err = $.err;
@@ -48,7 +49,7 @@
   function proc(f){
     var tps = types(f);
     var p = prms(f);
-    function f2(){
+    return worig(f, function (){
       func = f; prm = p;
       var a = arguments;
       var arr = [];
@@ -56,8 +57,7 @@
         arr[i] = process(a[i], tps[i]);
       }
       return apl(f, arr);
-    }
-    return f2;
+    });
   }
   
   function process(arg, type){
