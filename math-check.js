@@ -1,8 +1,8 @@
-/***** Math Validity Checker 3.0.2 *****/
+/***** Math Validity Checker *****/
 
-/* require tools 4.10.3 */
-/* optional prec-math 5.0.0 */
-/* optional cmpl-math 2.0.0 */
+/* require tools */
+/* optional prec-math */
+/* optional cmpl-math */
 
 (function (udf){
   ////// Import //////
@@ -157,7 +157,9 @@
     fn(C.cbrt, ["cmpl", "nprec"]);
     fn(C.fact, ["real", "nprec"]);
     fn(C.bin, ["real", "real", "nprec"]);
+    fn(C.quo, ["real", "real"]);
     fn(C.mod, ["real", "real"]);
+    fn(C.gcd, ["real", "real"]);
     fn(C.agm, ["cmpl", "cmpl", "nprec"]);
     fn(C.sin, ["cmpl", "nprec"]);
     fn(C.cos, ["cmpl", "nprec"]);
@@ -211,6 +213,9 @@
     fn(R.sqrt, ["real", "nprec"]);
     fn(R.fact, ["real"]);
     fn(R.bin, ["real", "real"]);
+    fn(R.quo, ["real", "real"]);
+    fn(R.mod, ["real", "real"]);
+    fn(R.gcd, ["real", "real"]);
     fn(R.agm, ["real", "real", "nprec"]);
     fn(R.sin, ["real", "nprec"]);
     fn(R.cos, ["real", "nprec"]);
