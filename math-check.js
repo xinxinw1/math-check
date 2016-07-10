@@ -157,6 +157,7 @@
     fn(C.cbrt, ["cmpl", "nprec"]);
     fn(C.fact, ["real", "nprec"]);
     fn(C.bin, ["real", "real", "nprec"]);
+    fn(C.mod, ["real", "real"]);
     fn(C.agm, ["cmpl", "cmpl", "nprec"]);
     fn(C.sin, ["cmpl", "nprec"]);
     fn(C.cos, ["cmpl", "nprec"]);
