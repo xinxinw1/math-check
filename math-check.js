@@ -161,6 +161,7 @@
     fn(C.mod, ["real", "real"]);
     fn(C.gcd, ["real", "real"]);
     fn(C.agm, ["cmpl", "cmpl", "nprec"]);
+    fn(C.rand, ["real", "real"]);
     fn(C.sin, ["cmpl", "nprec"]);
     fn(C.cos, ["cmpl", "nprec"]);
     fn(C.sinh, ["cmpl", "nprec"]);
@@ -217,6 +218,7 @@
     fn(R.mod, ["real", "real"]);
     fn(R.gcd, ["real", "real"]);
     fn(R.agm, ["real", "real", "nprec"]);
+    fn(R.rand, ["real", "real"]);
     fn(R.sin, ["real", "nprec"]);
     fn(R.cos, ["real", "nprec"]);
     fn(R.sinh, ["real", "nprec"]);
