@@ -159,6 +159,7 @@
     fn(C.bin, ["real", "real", "nprec"]);
     fn(C.quo, ["real", "real"]);
     fn(C.mod, ["real", "real"]);
+    fn(C.modPow, ["real", "real", "real"]);
     fn(C.gcd, ["real", "real"]);
     fn(C.agm, ["cmpl", "cmpl", "nprec"]);
     fn(C.rand, ["real", "real"]);
@@ -183,7 +184,7 @@
     fn(R.intp, ["real"]);   
     fn(R.decp, ["real"]);
     fn(R.negp, ["real"]);
-    fn(R.evnp, ["real"]);
+    fn(R.evenp, ["real"]);
     fn(R.oddp, ["real"]);
     fn(R.div5p, ["real"]);
     
@@ -216,6 +217,7 @@
     fn(R.bin, ["real", "real"]);
     fn(R.quo, ["real", "real"]);
     fn(R.mod, ["real", "real"]);
+    fn(R.modPow, ["real", "real", "real"]);
     fn(R.gcd, ["real", "real"]);
     fn(R.agm, ["real", "real", "nprec"]);
     fn(R.rand, ["real", "real"]);
